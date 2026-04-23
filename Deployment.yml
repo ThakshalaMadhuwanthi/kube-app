@@ -15,5 +15,6 @@ spec:
       containers:
         - name: kube-app-container
           image: kube-app:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
